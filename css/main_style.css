@@ -926,6 +926,9 @@ body{
 }
 
 /* container_2 ------------------------*/
+#container_2{
+    overflow: hidden;
+}
 .SelinoFont60{
     font-family: 'Selino', sans-serif;
     font-size: 60px;
@@ -1182,6 +1185,7 @@ body{
 
 .point_banner2{
     height: 438px;
+	overflow: hidden;
     background: url(../img/main/3.container/8.pointbanner/bg_pointbanner_img.svg) no-repeat center;
 }
 
