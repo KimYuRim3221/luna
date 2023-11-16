@@ -709,6 +709,7 @@ body{
 #section3_wrap{
     /* width: 100%; */
 	overflow: hidden;
+	padding-bottom: 8px;
 	height:752px;
     margin-top: 123px;
     background: url(../img/main/3.container/3.section/bg_Decoration.svg) no-repeat  center;
