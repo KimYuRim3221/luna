@@ -710,6 +710,7 @@ body{
     /* width: 100%; */
 	overflow: hidden;
 	padding-bottom: 8px;
+	box-sizing: border-box;
 	height:752px;
     margin-top: 123px;
     background: url(../img/main/3.container/3.section/bg_Decoration.svg) no-repeat  center;
