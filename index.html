@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1320">
+    <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/main/1.header/favicon.png">
+
+    <!-- webfont -->
+    <!-- notosans_Regular -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:ital,wght@0,400;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- notosans_bold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- selino_font -->
+    <link href="https://fonts.cdnfonts.com/css/selino" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main_style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+ 
+    <!-- 효과 -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+
+
+<body>
+    <!-- 커서 -->
+    <div class="cursor">
+        <img src="./img/main/1.header/favicon.png" alt="fllow_img">
+    </div>
+    
+    <!-- 좌측하단 스크롤버튼 -->
+    <a href="#" class="top_btn fixed_btn"><img src="./img/main/1.header/top_btn.svg" alt=""></a>
+    <a href="#point_banner2" class="bottom_btn fixed_btn"><img src="./img/main/1.header/bottom_btn.svg" alt="">
+    
+    </a>
+    <!-- 좌측하단 카카오버튼 -->
+    <span><img class="kakao_icon" id="popup_open" src="./img/main/1.header/kakao.svg" alt=""></span>
+
+     <!-- popup -->
+     <div id="popup_wrap">
+        <div class="login-wrapper">
+            <h2><img src="./img/main/1.header/kakao_logo.svg" alt=""></h2>
+            <div id="login-form_wrap">
+                <form method="post" action="서버의url" id="login-form">
+                    <input type="text" name="userName" placeholder="카카오메일 아이디, 이메일, 전화번호 ">
+                    <input type="password" name="userPassword" placeholder="비밀번호">
+                    <label for="remember-check">
+                        <input type="checkbox" id="remember-check"> &nbsp;간편로그인 정보 저장
+                    </label>
+                    <input type="submit" id="Login_submit"value="로그인">
+                    <p class="hr-sect">또는</p>
+                    <input type="submit" id="QR_submit" value="QR코드 로그인">
+                </form>
+                <div class="login_footer">
+                    <p><a href="#">회원가입</a></p>
+                    <ul>
+                        <li><a href="#">계정 찾기</a></li>
+                        <li><a href="#">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" id="close_popup"></button>
+        </div>
+    </div>
+    <div id="wrap">
+        <!-- header_S -->
+        <div id="header_lab">
+            <div id="header">
+                <!-- 밑선/높이75 -->
+                <div class="inner_header">
+                    <!-- 중앙/1320 -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/main/1.header/logo_luna.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="nav_wrap">
+                        <div class="nav">
+                            <ul class="gnb">
+                                <li>
+                                    <a href="#">ABOUT US</a>
+                                </li>
+                                <li>
+                                    <a href="#">COMMUNITY</a>
+                                </li>
+                                <li>
+                                    <a href="#">PRODUCT</a>
+                                </li>
+                                <li>
+                                    <a href="#">NEWS</a>
+                                </li>
+                                <li>
+                                    <a href="#">LOOKBOOK</a>
+                                </li>
+                            </ul>
+                            <div class="submenu"><!--submenu를 gnb의 형제 요소로 작성한다.-->
+                                <div class="inner_submenu">
+                                    <ul>
+                                        <li><a href="#">Brand story</a></li>
+                                        <li><a href="#">Location</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Notice </a></li>
+                                        <li><a href="#">Q&A</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">NEW / BEST</a></li>
+                                        <li><a href="#">Earring / Necklace</a></li>
+                                        <li><a href="#">Ring /
+                                                Bracelet</a></li>
+                                        <li><a href="#">ETC</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Event
+                                            </a></li>
+                                        <li><a href="#">Promotion
+                                            </a></li>
+                                    </ul>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <ul class="header_icon">
+                        <li>
+                            <a href="#">
+                                <img src="./img/main/1.header/icon_glass-browser.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/main/1.header/icon_user.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/main/1.header/icon_shopping-cart.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- header_E -->
+
+        <!-- banner_S ------------>
+        <div>
+            <div class="swiper mySwiper">
+                <!-- 중앙/너비1920/높이830/bg -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/main/2.banner/banner1.svg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/main/2.banner/banner2.svg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/main/2.banner/banner3.svg" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="banner_btn">
+                    <!-- 131/47 -->
+                    <a href="#">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+            
+            
+
+        
+        <!-- banner_E -->
+
+
+        <!-- container_1_S-->
+        <div id="container_1">
+            <!-- bg꾸밈효과/높이 -->
+            <!-- section_1----S -->
+            <div id="section_1">
+
+                <div class="inner_section_1">
+                    <div class="circle_text">
+                        <img src="./img/main/3.container/1.section/circle_text.svg" alt="">
+                    </div>
+                    <div class="section_1_title">
+                        <img src="./img/main/3.container/1.section/section1_title.svg" alt="">
+                    </div>
+                    <!-- 반짝이별 -->
+                    <div class="star1">
+                        <img src="./img/main/3.container/1.section/L_star.svg" alt="">
+                    </div>
+                    <div class="star2">
+                        <img src="./img/main/3.container/1.section/m_star1.svg" alt="">
+                    </div>
+                    <div class="star2-2">
+                        <img src="./img/main/3.container/1.section/m_star1.svg" alt="">
+                    </div>
+                    <div class="star2-3">
+                        <img src="./img/main/3.container/1.section/m_star1.svg" alt="">
+                    </div>
+                    <div class="star3">
+                        <img src="./img/main/3.container/1.section/m_star2.svg" alt="">
+                    </div>
+                    <div class="star3-2">
+                        <img src="./img/main/3.container/1.section/m_star2.svg" alt="">
+                    </div>
+                    <div class="L_section_1">
+                        <img src="./img/main/3.container/1.section/L_img2.svg" alt="L_img">
+                    </div>
+                    <div class="R_section_1" data-aos="fade-up" data-aos-duration="1000">
+                        <span>
+                            <p>[ My true beauty ]</p>
+                            <p>편안한 순간에 진정한 자신의 모습이 나타나듯<br>
+                                캐주얼한 일상 속에서 주얼리만으로<br>
+                                자신의 개성을 마음껏 표현할 수 있습니다.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- section_1----E -->
+            <!-- section_2----S -->
+            <div id="section_2">
+                <!-- bg꾸밈효과/높이331 -->
+                <div class="inner_section_2">
+                    <!-- 너비1320 -->
+                    <div class="L_section_2">
+                        <div class="L_section_2_img">
+                            <p>
+                                <img src="./img/main/3.container/2.section/L_pearl eyes.svg" alt="">
+                                </p>
+                        </div>
+                        
+                        <div class="L_text2" data-aos="fade-down" data-aos-duration="700">
+                            <span>
+                                <p>[ Like me ]</p>
+                                <p>내가 더 나다울 수 있는 주얼리,<br>
+                                    트렌드를 선도하는 유니크한 디자인으로<br>특별한 감정을 누구나 즐길 수 있습니다.</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="R_section_2">
+                        <div class="R_img2">
+                            <img src="./img/main/3.container/2.section/R_several pearls.svg" alt="">
+                        </div>
+                        <div class="R_text2" data-aos="fade-up" data-aos-duration="700">
+                            <span>
+                                <p>[ One complete fashion ]</p>
+                                <p>루나는 주얼리가 의류의 보조적인 역할이 아닌<br>
+                                    하나의 패션 매인 아이템으로 존재하며,<br>
+                                    주얼리라는 틀에 국한하기 않고
+                                    시즌마다 다양한 소재와<br> 유니크하고 고급스러운 디자인을 선보입니다.</p>
+                            </span>
+                            <div class="R_section_2_btn">
+                                <a href="#" class="MORE_btn">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section_2----E -->
+            <!-- section_3----S -->
+            <div id="section3_wrap">
+                <!-- 너비100%/높이752px/bg -->
+                <div class="section3">
+                    <!-- 중앙/너비1320/높이100% -->
+                    <div>
+                        <!-- 왼쪽글 -->
+                        <img src="./img/main/3.container/3.section/Lunasuniquebeaty427-171.svg" alt="">
+                        <p class="t1">우리 주변의 일상적이고 사소한 우리 주변의 <br>
+                            다양한 물질, 순간들을 진지한 시선으로 바라봅니다.</p>
+                        <p>The everyday and trivial things around us<br>
+                            We look at various substances and moments with a serious eye.</p>
+                    </div>
+                    <div>
+                        <!-- 오른쪽글 -->
+                        <p class="t1">지나가는것들의 아름다운 모든것에 영감을 받아
+                            <br>
+                            루나만의 방식으로 재해석하여 탄생한 단 하나의 주얼리.
+                        </p>
+                        <p>Inspired by all the beautiful things that pass by<br>
+                            A unique piece of jewelry reinterpreted in Luna’s own way.</p>
+                        <div class="section_3_btn">
+                            <a href="#" class="MORE_btn">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img_wrap1 img_wrap" data-aos="fade-up-right" data-aos-easing="linear"
+                        data-aos-delay="150">
+                        <!-- 왼그림 -->
+                        <div class="img_slide1 img_slide">
+                            <p class="img1 img1-1"></p>
+                            <p class="img2 img1-2"></p>
+                            <p class="img3 img1-3"></p>
+                            <p class="img4 img1-4"></p>
+                        </div>
+                    </div>
+                    <div class="section3_link">
+                        <ul>
+                            <li>
+                                <a href="#" id="button1" onclick="return false;">NEW/BEST</a>
+                            </li>
+                            <li>
+                                <a href="#" id="button2" onclick="return false;">EARRING/NECKLACE</a>
+                            </li>
+                            <li>
+                                <a href="#" id="button3" onclick="return false;">RING/BRACELET</a>
+                            </li>
+                            <li>
+                                <a href="#" id="button4" onclick="return false;">ETC</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="img_wrap2 img_wrap" data-aos="fade-down-left" data-aos-easing="linear"
+                        data-aos-delay="250">
+                        <!-- 오른그림 -->
+                        <div class="img_slide2 img_slide">
+                            <p class="img1 img2-1"></p>
+                            <p class="img2 img2-2"></p>
+                            <p class="img3 img2-3"></p>
+                            <p class="img4 img2-4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section_----E -->
+        </div>
+        <!-- container_1_E -->
+
+        <div id="point_banner">
+            <!-- bg/txt -->
+            <div class="inner_point_banner">
+                <div class="star1">
+                    <img src="./img/main/3.container/1.section/L_star.svg" alt="">
+                </div>
+                <div class="star2">
+                    <img src="./img/main/3.container/1.section/m_star1.svg" alt="">
+                </div>
+                <div class="star3">
+                    <img src="./img/main/3.container/1.section/m_star2.svg" alt="">
+                </div>
+                <h1>NEW LUNA COLLECTION</h1>
+                <p>CHECK OUT OUR LATEST ITEMS</p>
+                <div class="point_banner_btn">
+                    <a href="#" class="MORE_btn">
+                        MORE
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- container_2_S -->
+        <div id="container_2">
+            <!-- section2_1 -->
+            <div class="section2_1">
+                <!-- bg/높이722-->
+                <div class="inner_section2_1">
+                    <div class="L_section2_1">
+                        <span class="SelinoFont60">
+                            Interpretation of<br>
+                            beautiful<br>
+                            things
+                        </span>
+                    </div>
+                    <div class="R_section2_1">
+                        <div class="top_text">
+                            <p>Luna's unique jewelry</p>
+                            <p>단 하나뿐인 나만의 주얼리</p>
+                        </div>
+                        <div class="inner_R_section2_1">
+                            <div class="R_section2_1_txt">
+                                <div class="R_section2_1_btn">
+                                    <a href="#" class="MORE_btn">
+                                        READ MORE
+                                    </a>
+                                </div>
+                                <p class="R_p1">
+                                    <!-- 오른정렬 -->
+                                    루나만의 트렌드를 선도하는<br>
+                                    유니크한 디자인의 럭셔리 주얼리 컬렉션<br>
+                                    지금 만나보세요.
+                                </p>
+                                <p>
+                                    <!-- 오른정렬 -->
+                                    Leading Luna’s own trends<br>
+                                    Luxury jewelry collection with unique designs<br>
+                                    Meet now.
+
+                                </p>
+                            </div>
+                            <div class="R_section2_1_img">
+                                <a href="#">
+                                    <img src="./img/main/3.container/5.section/R_LookBook_img.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="circle_text">
+                                <img src="./img/main/3.container/1.section/circle_text.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- section2_2 -->
+            <div class="section2_2">
+                <!-- bg/높이864/ -->
+                <div class="inner_section2_2">
+                    <div class="section2_2_top">
+                        <h1 class="SelinoFont60">EVENT</h1>
+                        <div class="minimore_btn">
+                            <a href="#">
+                                <img src="./img/main/3.container/6.section/more_btn.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider_wrap">
+                        <div class="section2_2_event_wrap regular slider">
+                            <div>
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/6.section/checkpoint_event.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">출석체크 이벤트</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/6.section/welcome_event.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">첫방문고객 증정 이벤트</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/6.section/birthday__event.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">생일자 쿠폰 증정 이벤트</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/6.section/best30sale.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">베스트 제품 30% 할인</a>
+                            </div>
+                            <div>
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/6.section/50coupon_event.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">수험생 수능 할인쿠폰증정</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- section2_3 -->
+            <div class="section2_3">
+                <!-- bg/높이600-->
+                <h1 class="SelinoFont60">CELEBRITY PICK</h1>
+                <div class="CELEBRITY_slide">
+                    <!-- Swiper -->
+                    <div class="flow_CELEBRITY">
+                        <div class="list">
+                            <div class="flow-slide ">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/1CELEB.svg" alt="">
+                                    <a href="#" onclick="return false;">
+                                        <p>'윈터'님 무대공 협찬</p>
+                                    </a>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/2CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'조유리'님 뮤직비디오 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/3CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'최예나'님 팬미팅 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/4CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'안유진'님 인기가요 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/5CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'장원영'님 뮤직뱅크 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/6CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'수지'님 촬영-이두나 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/7CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'헤이즈'님 뮤직뱅크 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/8CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'조이'님 무대인 협찬</p>
+                                </a>
+                            </div>
+                            <div class="flow-slide">
+                                <a href="#" onclick="return false;">
+                                    <img src="./img/main/3.container/7.section/9CELEB.svg" alt="">
+                                </a>
+                                <a href="#" onclick="return false;">
+                                    <p>'슈화'님 방송출현 협찬</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container_2_E -->
+
+
+        <!-- point_banner2 ----->
+        <div class="point_banner2" id="point_banner2" data-aos="fade-up">
+            <div class="inner_point_banner2">
+                <div class="banner2_text1" data-aos="fade-right" data-aos-delay="500">
+                    <div class="SelinoFont60">
+                        Luna<br>with nature
+                    </div>
+                    <div>
+                        To protect the environment and<br>
+                        make the Earth we live on healthier.<br>
+                        We only use packages made of 100% recyclable materials.<br>
+                        Let’s think together for our<br>
+                        healthy lives and worthwhile consumption.
+                    </div>
+                </div>
+                <div class="banner2_text2">
+                    <div data-aos="fade-left" data-aos-delay="1000">환경보호 및 우리가 살아가는 지구를 보다 건강하게 하기 위해서<br>
+                        100% 재활용이 가능한 재질의 패키지만 사용합니다.<br>
+                        우리의 건강한 삶과 가치있는 소비를 위해 함께 고민합시다.
+                    </div>
+                </div>
+                <div class="symbol">
+                    <p>
+                        <!-- simbol bg -->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer_S -->
+        <div id="footer_position_wrap">
+            <div id="footer_wrap">
+                <div id="footer">
+                    <div class="inner_footer">
+                        <div class="logo_icon_wrap">
+                            <div>
+                                <a href="#">
+                                    <img src="./img/main/4.footer/logo_Luna.svg" alt="">
+                                </a>
+                            </div>
+                            <ul class="footer_icon_wrap">
+                                <li>
+                                    <a href="#" onclick="return false;">
+                                        <img src="./img/main/4.footer/facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">
+                                        <img src="./img/main/4.footer/instar.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">
+                                        <img src="./img/main/4.footer/twiter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false;">
+                                        <img src="./img/main/4.footer/youtube.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_text_wrap footer-container">
+                            <ul class="footer_text1">
+                                <li class="footer_text_title">
+                                    <a href="#">
+                                        C / S
+                                    </a>
+                                </li>
+                                <li>
+                                    051-123-4567
+                                </li>
+                                <li>
+
+                                    평일 AM 10:00 - PM 18:00(주말 및 공휴일 휴무)
+
+                                </li>
+                                <li>
+
+                                    <span>점심시간</span> 12:00 - 13:00
+
+                                </li>
+                            </ul>
+                            <ul class="footer_text2">
+                                <li class="footer_text_title">
+                                    <a href="#" onclick="return false;">
+                                        C O M P A N Y
+                                    </a>
+                                </li>
+                                <li>
+
+                                    루나 (Luna) l CEO : KIM YURIM l 03221부산광역시 남구
+
+                                </li>
+                                <li>
+
+                                    Business License : 123 - 45-678910 [사업자정보확인] l E-Commerce Permit : 2023-부산남구-1244
+
+                                </li>
+                                <li>
+
+                                    Tel : 051 - 123 - 4567 l E-mail : Luna@naver.com l 개인정보관리책임자 :
+                                    김유림(huk97210@naver.com)
+
+                                </li>
+                                <li class="footer_list_box">
+                                    <div class="footer_list">
+                                        <div><a href="#">
+                                                About us</a></div>
+                                        <div><a href="#">
+                                                Community</a></div>
+                                        <div><a href="#">
+                                                Product</a></div>
+                                        <div><a href="#">
+                                                NEWS</a></div>
+                                        <div><a href="#">
+                                                Lookbook
+                                            </a></div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="footer_text3">
+                                <li class="footer_text_title">
+                                    <a href="#" onclick="return false;">
+                                        B A N K
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <span>국민</span> 1010-444-951213
+
+                                </li>
+                                <li>
+
+                                    예금주 : 루나
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- footer_E -->
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- js오픈소스 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- js제어 -->
+    <script src="js/script.js"></script>
+    <!-- section2_2 이벤트흐름효과 -->
+    <script src="js/slick.js"></script>
+    <!-- section2_3 무한 롤링효과 -->
+    <script src="./js/FlowBanner.js"></script>
+    <!-- 스크롤시효과 AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                centerMode: true,
+                centerPadding: '0px',
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,      //자동시작 (boolean) -default:false
+                autoplaySpeed: 3000, //자동넘기기 시간(int, 1000ms = 1초)
+            });
+        });
+    </script>
+    <!-- Initialize Swiper/배너 -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            autoplay: {  // 자동 슬라이드 설정 , 비 활성화 시 false
+                delay: 5000,   // 시간 설정
+                disableOnInteraction: false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+
+            },
+        });
+    </script>
+    <!-- Swiper JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ -->
+ <!-- 마우스별빛효과 -->
+ <script type="text/javascript">
+ // <![CDATA[
+ var colour="#FFFCF8"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
+ var sparkles=50;
+ 
+ /****************************
+ *  Tinkerbell Magic Sparkle *
+ *(c)2005-13 mf2fm web-design*
+ *  http://www.mf2fm.com/rv  *
+ * DON'T EDIT BELOW THIS BOX *
+ ****************************/
+ var x=ox=400;
+ var y=oy=300;
+ var swide=800;
+ var shigh=600;
+ var sleft=sdown=0;
+ var tiny=new Array();
+ var star=new Array();
+ var starv=new Array();
+ var starx=new Array();
+ var stary=new Array();
+ var tinyx=new Array();
+ var tinyy=new Array();
+ var tinyv=new Array();
+ 
+ window.onload=function() { if (document.getElementById) {
+   var i, rats, rlef, rdow;
+   for (var i=0; i<sparkles; i++) {
+     var rats=createDiv(3, 3);
+     rats.style.visibility="hidden";
+     rats.style.zIndex="999";
+     document.body.appendChild(tiny[i]=rats);
+     starv[i]=0;
+     tinyv[i]=0;
+     var rats=createDiv(5, 5);
+     rats.style.backgroundColor="transparent";
+     rats.style.visibility="hidden";
+     rats.style.zIndex="999";
+     var rlef=createDiv(1, 5);
+     var rdow=createDiv(5, 1);
+     rats.appendChild(rlef);
+     rats.appendChild(rdow);
+     rlef.style.top="2px";
+     rlef.style.left="0px";
+     rdow.style.top="0px";
+     rdow.style.left="2px";
+     document.body.appendChild(star[i]=rats);
+   }
+   set_width();
+   sparkle();
+ }}
+ 
+ function sparkle() {
+   var c;
+   if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+     ox=x;
+     oy=y;
+     for (c=0; c<sparkles; c++) if (!starv[c]) {
+       star[c].style.left=(starx[c]=x)+"px";
+       star[c].style.top=(stary[c]=y+1)+"px";
+       star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+       star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
+       star[c].style.visibility="visible";
+       starv[c]=50;
+       break;
+     }
+   }
+   for (c=0; c<sparkles; c++) {
+     if (starv[c]) update_star(c);
+     if (tinyv[c]) update_tiny(c);
+   }
+   setTimeout("sparkle()", 40);
+ }
+ 
+ function update_star(i) {
+   if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+   if (starv[i]) {
+     stary[i]+=1+Math.random()*3;
+     starx[i]+=(i%5-2)/5;
+     if (stary[i]<shigh+sdown) {
+       star[i].style.top=stary[i]+"px";
+       star[i].style.left=starx[i]+"px";
+     }
+     else {
+       star[i].style.visibility="hidden";
+       starv[i]=0;
+       return;
+     }
+   }
+   else {
+     tinyv[i]=50;
+     tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+     tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+     tiny[i].style.width="2px";
+     tiny[i].style.height="2px";
+     tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
+     star[i].style.visibility="hidden";
+     tiny[i].style.visibility="visible"
+   }
+ }
+ 
+ function update_tiny(i) {
+   if (--tinyv[i]==25) {
+     tiny[i].style.width="1px";
+     tiny[i].style.height="1px";
+   }
+   if (tinyv[i]) {
+     tinyy[i]+=1+Math.random()*3;
+     tinyx[i]+=(i%5-2)/5;
+     if (tinyy[i]<shigh+sdown) {
+       tiny[i].style.top=tinyy[i]+"px";
+       tiny[i].style.left=tinyx[i]+"px";
+     }
+     else {
+       tiny[i].style.visibility="hidden";
+       tinyv[i]=0;
+       return;
+     }
+   }
+   else tiny[i].style.visibility="hidden";
+ }
+ 
+ document.onmousemove=mouse;
+ function mouse(e) {
+   if (e) {
+     y=e.pageY;
+     x=e.pageX;
+   }
+   else {
+     set_scroll();
+     y=event.y+sdown;
+     x=event.x+sleft;
+   }
+ }
+ 
+ window.onscroll=set_scroll;
+ function set_scroll() {
+   if (typeof(self.pageYOffset)=='number') {
+     sdown=self.pageYOffset;
+     sleft=self.pageXOffset;
+   }
+   else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+     sdown=document.body.scrollTop;
+     sleft=document.body.scrollLeft;
+   }
+   else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+     sleft=document.documentElement.scrollLeft;
+     sdown=document.documentElement.scrollTop;
+   }
+   else {
+     sdown=0;
+     sleft=0;
+   }
+ }
+ 
+ window.onresize=set_width;
+ function set_width() {
+   var sw_min=999999;
+   var sh_min=999999;
+   if (document.documentElement && document.documentElement.clientWidth) {
+     if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+     if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+   }
+   if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+     if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+     if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+   }
+   if (document.body.clientWidth) {
+     if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+     if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+   }
+   if (sw_min==999999 || sh_min==999999) {
+     sw_min=800;
+     sh_min=600;
+   }
+   swide=sw_min;
+   shigh=sh_min;
+ }
+ 
+ function createDiv(height, width) {
+   var div=document.createElement("div");
+   div.style.position="absolute";
+   div.style.height=height+"px";
+   div.style.width=width+"px";
+   div.style.overflow="hidden";
+   return (div);
+ }
+ 
+ function newColour() {
+   var c=new Array();
+   c[0]=255;
+   c[1]=Math.floor(Math.random()*256);
+   c[2]=Math.floor(Math.random()*(256-c[1]/2));
+   c.sort(function(){return (0.5 - Math.random());});
+   return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
+ }
+ // ]]>
+ </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
