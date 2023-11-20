@@ -1202,6 +1202,7 @@ body{
     position: absolute;
     bottom: 8px;
     left: 50%;
+z-index: 99;	
     width: 90px;
     height: 90px;
     transform: translate(-50%, 0%);
