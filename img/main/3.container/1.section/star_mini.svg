@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="30.953" viewBox="0 0 27 30.953">
+  <defs>
+    <filter id="빼기_249" x="0" y="0" width="27" height="30.953" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#빼기_249)">
+    <path id="빼기_249-2" data-name="빼기 249" d="M60.636,61.725h0C60.613,57.465,58.085,54,55,54c3.085,0,5.613-3.466,5.636-7.725C60.658,50.534,63.186,54,66.272,54,63.186,54,60.658,57.466,60.636,61.725ZM66.5,54.006h0c-.07,0-.141-.006-.21-.006h0c.067,0,.137,0,.208-.006v.012Z" transform="translate(-47.5 -38.77)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
