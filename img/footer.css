@@ -1,0 +1,155 @@
+/* footer------------------------------------- */
+/* #footer_position_wrap{
+    width: 100%;
+    height: 503px;
+} */
+
+/* footer포지션 새부모 */
+#footer_wrap{
+    width: 100%;
+    height: 546px;
+    position: relative;
+    background-color: #FFFCF8;
+}
+
+#footer{
+    position: absolute;
+    top: -93px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    background: url(../img/main/4.footer/background_1.png)no-repeat center bottom;
+}
+
+.inner_footer{
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 69px 0 106px;
+}
+
+.logo_icon_wrap{
+    /* 아이콘기준부모 */
+    position: relative;
+    margin-top: 25px;
+}
+
+/* 로고 */
+.logo_icon_wrap div:nth-child(1){
+    width: 100%;
+    height: 54px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 70px;
+    /* background-color: #333; */
+}
+
+.footer_icon_wrap{
+    height: 23.8px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.footer_text_wrap ul{
+    text-align: center;
+}
+
+.footer_icon_wrap li{
+    float: left;
+    width: 23.8px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.footer_icon_wrap li:hover{
+    opacity: 1;
+}
+
+/* 공통 */
+.footer_text_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.footer_text_wrap ul li{
+    margin-bottom: 11px;
+}
+
+.footer_text_title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer_text_wrap span{
+    font-weight: bold;
+}
+
+/* 1 */
+
+.footer_text1 li:nth-child(1){
+    margin-bottom: 13px;
+}
+.footer_text1 li:nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+    height: 44px;
+    /* 세로가운데정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+/* 2 */
+.footer_text2 li:nth-child(1){
+    margin-bottom: 34px;
+}
+
+.footer_text2 li:nth-child(5){
+    margin-top: 101px;
+}
+
+/* 3 */
+.footer_text3 li:nth-child(1){
+    margin-bottom: 36px;
+}
+
+.footer_list {
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+.footer_list> div {
+    float: left;
+    width: 20%; 
+    position: relative;
+}
+.footer_list> div>a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;}
+.footer_list> div>a::before {
+    content:"";
+    width: 1px;
+    height: 15px;
+    border-left: 1px
+    solid #000;
+    position: absolute;
+    top: 2.5px;
+    left: -1px;
+}
+
+.footer_list> div>a:hover{
+    font-weight: bold;
+}
+
+.footer-container ul:nth-child(1){
+    float: left;
+  }
+.footer-container ul:nth-child(2){
+    float: left;
+    margin-left: 125px;
+  }
+.footer-container ul:nth-child(3){
+    float: right;
+  }
+  
