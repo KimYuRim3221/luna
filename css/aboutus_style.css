@@ -271,7 +271,7 @@
   position: relative;
 }
 
-#inner_section3> ul> li .section3_img_wrap::before{
+#inner_section3> ul> li strong{
   position: absolute;
   top: 0;
   left: 0;
@@ -284,7 +284,7 @@
 }
 
 
-#inner_section3> ul> li:hover .section3_img_wrap::before{
+#inner_section3> ul> li:hover strong{
   opacity: 1;
 }
 
