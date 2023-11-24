@@ -35,7 +35,7 @@ $(function(){
         });
     });
 
-// 섹션3이미지전환효과
+// 메인섹션3이미지전환효과
 $(function(){
     $("#button1").click(function(){
 
