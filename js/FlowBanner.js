@@ -40,3 +40,25 @@ function setFlowBanner() {
         $wrap.find('.list').css('animation-play-state', 'running');
     });
 }
+
+
+// 메인섹션3이미지전환효과
+$(function(){
+    $("#button1").click(function(){
+
+            $(".img1").fadeIn().siblings().fadeOut();
+    });	
+    $("#button2").click(function(){
+
+            $(".img2").fadeIn().siblings().fadeOut();
+    });	
+    $("#button3").click(function(){
+
+            $(".img3").fadeIn().siblings().fadeOut();
+    });	
+    $("#button4").click(function(){
+
+            $(".img4").fadeIn().siblings().fadeOut();
+    });	
+});
+
